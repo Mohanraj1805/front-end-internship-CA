@@ -1,0 +1,82 @@
+/* Gradient background for the entire container */
+.background {
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(195,135,165,1) 17%, rgba(157,101,132,1) 32%, rgba(183,56,165,1) 54%, rgba(206,148,233,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* Card Styling */
+.card1 {
+ 
+ 
+    background-color: #eac6dc;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling inside the card */
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Content inside the card */
+.card-content {
+    padding: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ff6f61;
+}
+
+/* Control buttons */
+.controls h1 {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Icon styling */
+.icons p {
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .controls h1 {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+    
+    .icons p {
+        font-size: 18px;
+    }
+}
